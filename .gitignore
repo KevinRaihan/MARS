@@ -1,0 +1,55 @@
+# Confidential data - never commit
+data/
+*.las
+*.LAS
+*.sgy
+*.SGY
+*.segy
+*.zarr/
+*.xyt
+*.xlsx
+results/**/*.npy
+results/**/*.zarr
+
+# Python
+.venv/
+__pycache__/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# ---------------------------------------------------------------- public-repo exclusions
+# Site config with real well ids / file naming lives in data/ (already ignored):
+#   data/dataset.json, data/well_codenames.json   (templates in configs/)
+# Analysis outputs carry real well ids; regenerate with scripts/run_pipeline.py
+results/
+# Private working notes, rescued thesis documents, agent context
+vault/
+docs_rescued/
+notebooks/
+AGENT_ONBOARDING.md
+CLAUDE.md
+.claude/
+# Data-delivery and drive-rescue tools (private paths, real file names)
+scripts/stage_data.py
+scripts/stage_phase4_wells.py
+scripts/backup_large.py
+scripts/merge_verified.py
+scripts/repair_against_reference.py
+scripts/scan_backup_integrity.py
+scripts/verify_staged.py
+scripts/verify_formats.py
+scripts/adjudicate_segy.py
+scripts/demo_section_zp.py
+# Paper: generated tables/figures, build outputs and drafts
+paper/tables/
+paper/figures/
+paper/**/*.pdf
+paper/**/*.log
+paper/outline.md
+paper/**/*.blg
+paper/**/*.aux
+paper/**/*.bbl
+paper/**/*.out
+paper/**/*.toc

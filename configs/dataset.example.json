@@ -1,0 +1,103 @@
+{
+ "_note": "Template. Copy to <data root>/dataset.json (next to raw/, git-ignored) and fill in the real well ids. Codenames go in <data root>/well_codenames.json as {\"<well id>\": \"<CODENAME>\"}.",
+ "las_prefix": "Field_",
+ "unprefixed": [
+  "Other_"
+ ],
+ "well_sets": {
+  "first12": [
+   "W-02",
+   "W-03",
+   "W-05",
+   "W-05st",
+   "W-06",
+   "W-07",
+   "W-07st",
+   "W-08",
+   "W-08st",
+   "W-09",
+   "W-10",
+   "W-14"
+  ],
+  "added10": [
+   "W-01",
+   "E-10",
+   "E-11",
+   "E-12",
+   "E-12st",
+   "E-28",
+   "E-30",
+   "W-12p",
+   "Other_01",
+   "Other_03"
+  ],
+  "thesis_pair": [
+   "W-14",
+   "W-09"
+  ],
+  "swt_exclude": [
+   "W-14"
+  ],
+  "measured_vs": [
+   "W-10",
+   "W-14"
+  ],
+  "holdout_EAST": [
+   "E-10",
+   "E-11",
+   "E-12",
+   "E-12st",
+   "E-28",
+   "E-30",
+   "Other_01",
+   "Other_03"
+  ],
+  "holdout_SOUTH": [
+   "W-05",
+   "W-05st",
+   "W-10",
+   "W-14"
+  ],
+  "section_A": [
+   "W-09",
+   "W-14"
+  ],
+  "section_B": [
+   "W-09",
+   "W-14",
+   "W-12p",
+   "E-10",
+   "E-11"
+  ],
+  "six_column_marker": [
+   "W-08"
+  ]
+ },
+ "test_expectations": {
+  "_note": "Optional: values from your own data that tests/*.py check (data tests only).",
+  "ronaldo_max_depth": 0.0,
+  "ronaldo_legacy_UBR": [
+   0.0,
+   0.0
+  ],
+  "ronaldo_legacy_LBR": [
+   0.0,
+   0.0
+  ],
+  "ronaldo_BRF": [
+   0.0,
+   0.0
+  ],
+  "ronaldo_LBRc": [
+   0.0,
+   0.0
+  ],
+  "thesis_pair_LBR_samples": [
+   0,
+   0
+  ],
+  "six_column_top_ubr_md": 0.0,
+  "six_column_top_ubr_tvdss": 0,
+  "ronaldo_padded_vs": 0.0
+ }
+}
